@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "font1";
+  src: url(../public/font/Blinker-Regular.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: Inter
+
+$black1: rgb(12, 12, 12);
+$black2: rgb(20, 20, 20);
+$white1: rgb(250, 249, 252);
+$grey1: rgb(105, 105, 105);
+$grey2: rgb(210, 210, 210);
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font1;
+  color: $black2;
+  background: $white1;
+}
