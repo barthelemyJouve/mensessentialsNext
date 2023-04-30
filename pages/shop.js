@@ -1,7 +1,9 @@
+import Header from "@/components/Header";
+
 const shop = () => {
   return (
     <div>
-      <h1>Welcome to our shop</h1>
+      <Header id={3} />
     </div>
   );
 };

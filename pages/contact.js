@@ -1,7 +1,9 @@
+import Header from "@/components/Header";
+
 const contact = () => {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <Header id={5} />
     </div>
   );
 };
