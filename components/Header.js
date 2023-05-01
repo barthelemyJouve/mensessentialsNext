@@ -26,7 +26,7 @@ const Header = ({ id }) => {
           <div className="legend-icon">
             <p>Lot of usefull articles</p>
             <div className="icon">
-              <i class="fa-solid fa-arrow-up-right-dots"></i>
+              <i className="fa-solid fa-arrow-up-right-dots"></i>
             </div>
           </div>
           <h2>View our blog</h2>
@@ -37,7 +37,7 @@ const Header = ({ id }) => {
           <div className="legend-icon">
             <p>Discover our history</p>
             <div className="icon">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
           </div>
           <h2>About us</h2>
@@ -48,7 +48,7 @@ const Header = ({ id }) => {
           <div className="legend-icon">
             <p>Have some questions?</p>
             <div className="icon">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
           </div>
           <h2>Contact</h2>

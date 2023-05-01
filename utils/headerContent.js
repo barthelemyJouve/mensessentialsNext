@@ -12,7 +12,8 @@ export const headerContent = {
     {
       id: 2,
       title: "Blog",
-      Header1: "Blog",
+      Header1:
+        "Discover the Latest Men's Essentials: Tips, Reviews, and Recommendations",
       description:
         "Welcome to our blog a place where you can learn about the usefullness of our featured products",
       image: require("../public/img/home-header.webp"),
@@ -20,7 +21,8 @@ export const headerContent = {
     {
       id: 3,
       title: "Shop",
-      Header1: "Shop",
+      Header1:
+        "Shop the Best Men's Essentials: Practical and Beneficial Products for Every Lifestyle",
       description:
         "Welcome to our shop, here you can find all the articles we recommend for you on our blog and websites",
       image: require("../public/img/header-contrast.jpg"),
@@ -28,14 +30,16 @@ export const headerContent = {
     {
       id: 4,
       title: "About us",
-      Header1: "About us",
+      Header1:
+        "Discover Our Story and Mission at Men's Essentials: Your One-Stop Destination for Practical and Beneficial Products for Men",
       description: "Learn more about our goals, missions and more",
       image: require("../public/img/about-header.jpg"),
     },
     {
       id: 5,
       title: "Contact",
-      Header1: "Contact",
+      Header1:
+        "Get in Touch with Men's Essentials: Contact Us for Inquiries, Support, and Collaborations",
       description:
         "If you have questions, if you want to suggest us a product reach us here we will answer as soon as possible",
       image: require("../public/img/about-contact.webp"),
