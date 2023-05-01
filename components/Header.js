@@ -51,7 +51,7 @@ const Header = ({ id }) => {
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
           </div>
-          <h2>Contact us</h2>
+          <h2>Contact</h2>
         </div>
       </Link>
     </header>
