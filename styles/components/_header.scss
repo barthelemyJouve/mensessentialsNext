@@ -1,6 +1,7 @@
 header {
   max-width: 1200px;
-  margin: 30px auto;
+  height: 550px;
+  margin: 0 auto 30px;
   padding: 0 19px;
   display: grid;
   grid-template-columns: 50% 25% 25%;
@@ -9,12 +10,71 @@ header {
   grid-template-areas:
     "main blog blog"
     "main about contact";
+  transform: translateX(-100%);
+  animation: animHeader 0.5s ease forwards 50ms;
+  @keyframes animHeader {
+    to {
+      transform: translateX(0);
+    }
+  }
+
   .header-title {
     grid-area: main;
     background: $black2;
     border-radius: 30px;
     padding: 40px;
     color: $white1;
+    transition: 0.3s ease-out;
+    &:hover {
+      scale: 102%;
+      opacity: 0.77;
+    }
+    .header-title-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .header-title-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $black2;
+        background: $grey2;
+        width: 60%;
+        min-width: 150px;
+        border-radius: 15px;
+        .button-left {
+          padding: 10px 30px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 100%;
+          p {
+            color: $grey1;
+          }
+          h3 {
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+          }
+        }
+        .button-right {
+          display: flex;
+          align-items: center;
+          padding: 30px;
+          height: 100%;
+          border-left: 1px solid $black2;
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
   .header-links-blog {
     border-radius: 30px;
@@ -22,6 +82,31 @@ header {
     background: $grey2;
     color: $black2;
     padding: 20px;
+    transition: 0.3s ease-out;
+    &:hover {
+      scale: 102%;
+      opacity: 0.77;
+    }
+    .header-links-blog-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      h2 {
+        font-size: 2.7rem;
+      }
+
+      .legend-icon {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 600;
+        align-items: center;
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
   .header-links-about {
     padding: 20px;
@@ -29,6 +114,31 @@ header {
     grid-area: about;
     background: rgb(178, 134, 253);
     color: $white1;
+    transition: 0.3s ease-out;
+    &:hover {
+      scale: 102%;
+      opacity: 0.77;
+    }
+    .header-links-about-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      h2 {
+        font-size: 2.7rem;
+      }
+
+      .legend-icon {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 600;
+        align-items: center;
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
   .header-links-contact {
     padding: 20px;
@@ -36,5 +146,31 @@ header {
     grid-area: contact;
     background: rgb(178, 240, 66);
     color: $black2;
+    transition: 0.3s ease-out;
+    &:hover {
+      scale: 102%;
+      opacity: 0.77;
+    }
+    .header-links-contact-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+
+      h2 {
+        font-size: 2.7rem;
+      }
+
+      .legend-icon {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 600;
+        align-items: center;
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }

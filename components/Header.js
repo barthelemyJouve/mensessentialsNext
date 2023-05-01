@@ -6,7 +6,7 @@ const Header = ({ id }) => {
   return (
     <header>
       <Link className="header-title" href="/shop">
-        <div>
+        <div className="header-title-container">
           <div className="header-title-top">
             <p>{header.title}</p>
             <h1>{header.Header1}</h1>
@@ -22,7 +22,7 @@ const Header = ({ id }) => {
         </div>
       </Link>
       <Link className="header-links-blog" href="/blog">
-        <div>
+        <div className="header-links-blog-container">
           <div className="legend-icon">
             <p>Lot of usefull articles</p>
             <div className="icon">
@@ -33,7 +33,7 @@ const Header = ({ id }) => {
         </div>
       </Link>
       <Link className="header-links-about" href="/about">
-        <div>
+        <div className="header-links-about-container">
           <div className="legend-icon">
             <p>Discover our history</p>
             <div className="icon">
@@ -44,7 +44,7 @@ const Header = ({ id }) => {
         </div>
       </Link>
       <Link className="header-links-contact" href="/contact">
-        <div>
+        <div className="header-links-contact-container">
           <div className="legend-icon">
             <p>Have some questions?</p>
             <div className="icon">
