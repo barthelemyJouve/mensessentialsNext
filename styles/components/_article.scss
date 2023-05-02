@@ -1,5 +1,13 @@
 .article-presentation {
   height: 100%;
+  border-radius: 30px;
+  padding: 40px 30px;
+  // border: 3px solid $grey1;
+  background: $white1;
+  box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
+  display: grid;
+  grid-template-rows: 20% 30% 40% 1fr;
+
   h2 {
     background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
       linear-gradient(transparent calc(100% - 1px), $black2 1px);
@@ -7,28 +15,40 @@
     background-position: 0 bottom, 0 bottom;
     background-repeat: no-repeat;
     padding-bottom: 6px;
+    margin-bottom: 25px;
   }
-  img {
-    max-width: 100%;
 
-    margin: 10px auto;
+  img {
+    height: 155px;
+    margin: 0 auto;
   }
+
   p {
-    margin-bottom: 10px;
+    margin: 25px 0;
     text-align: justify;
     color: $grey1;
   }
-  .article-page-link {
+  // .article-page-link {
+  //   text-align: center;
+
+  a {
     background: $black2;
+    color: $white1;
+    padding: 10px 20px;
     border-radius: 20px;
-    padding: 10px 0;
-    width: 60%;
+    font-family: $font2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
     margin: 0 auto;
-    a {
-      color: $white1;
-    }
     &:hover {
-      background: $grey1;
+      background: $black1;
     }
   }
+  &:hover {
+    background: $grey2;
+    scale: 101%;
+  }
 }
+// }

@@ -7,11 +7,12 @@ const Article = ({ id }) => {
   return (
     <div className="article-presentation">
       <h2>{article.title}</h2>
+
       <img src={article.image} alt={article.title} />
+
       <p>{article.description}</p>
-      <div className="article-page-link">
-        <a href={"./blog" + article.title}>Read More</a>
-      </div>
+
+      <a href={"./blog" + article.title}>Read More</a>
     </div>
   );
 };

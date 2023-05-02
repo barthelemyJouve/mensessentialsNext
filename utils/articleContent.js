@@ -60,10 +60,10 @@ export const articleContent = {
     },
     {
       id: 2,
-      title: "Push-up Bars: The Ultimate Tool for Your Workout",
+      title: "Push-up Bars: The Ultimate Tool",
       description:
         "Push-up bars are a simple yet effective tool that can enhance your push-up workout and provide a range of benefits that can help you achieve your fitness goals. By using push-up bars, you can improve your push-up form, increase your strength and muscle mass, reduce the risk of...",
-      image: require("../public/img/blog/push-up-bars.jpg"),
+      image: "/img/blog/push-up-bars.jpg",
       content: `If you're a fitness enthusiast or someone who's just starting out, push-up bars are one of the most essential pieces of equipment you should have in your fitness arsenal. These simple yet effective tools offer a wide range of benefits that can help you improve your push-up form, increase your strength and muscle mass, and reduce the risk of injury. In this article, we'll explore the different virtues and benefits of push-up bars and why you should consider incorporating them into your fitness routine.
   
         What are Push-up Bars?
@@ -104,8 +104,8 @@ export const articleContent = {
       id: 3,
       title: "The Benefits of Wearing Caps for Men",
       description:
-        "Caps are not only a fashion statement but also a functional accessory for men. They protect your head from the sun, keep it warm during cold weather, hide bad hair days, and boost confidence. Caps are versatile and can be worn with a variety of outfits, making them a must-have accessory for every man.",
-      image: require("../public/img/blog/caps.jpg"),
+        "Caps are not only a fashion statement but also a functional accessory for men. They protect your head from the sun, keep it warm during cold weather, hide bad hair days, and boost confidence. Caps are versatile and can be worn with a variety of outfits, making them a...",
+      image: "/img/blog/caps.jpg",
       content: `Introduction:
   
         Caps have been around for centuries and have been worn by both men and women for various reasons. However, in recent times, caps have become more of a fashion statement and less of a functional accessory. Caps not only protect your head and face from the sun but also help to make you look stylish and fashionable. In this blog post, we will discuss the various benefits of wearing caps for men.
@@ -131,10 +131,10 @@ export const articleContent = {
     },
     {
       id: 4,
-      title: "The Benefits of Wearable Smart Watches for Men",
+      title: "The Benefits of Smart Watches",
       description:
         "Wearable smartwatches provide men with health tracking, convenience, style, navigation, and productivity benefits. They offer accessibility and customization, making them an essential accessory for every man who wants to stay connected and organized on the go.",
-      image: require("../public/img/blog/smart-watch.jpg"),
+      image: "/img/blog/smart-watch.jpg",
       content: `Introduction:
   
         Wearable smartwatches have become increasingly popular in recent years. They have gone from being a luxury item for tech enthusiasts to an essential accessory for men. In this blog post, we will discuss the various benefits of wearable smartwatches for men.
@@ -163,7 +163,7 @@ export const articleContent = {
       title: "The Versatility and Benefits of Men's Bags ",
       description:
         "Men's bags are versatile, comfortable, stylish, and functional. They keep items organized and are perfect for work, weekends, and travel. With a range of styles and materials, men's bags are a must-have accessory...",
-      image: require("../public/img/blog/bag.webp"),
+      image: "/img/blog/bag.webp",
       content: `Introduction:
   
         Gone are the days when bags were just for women. Nowadays, men's bags have become a fashionable and practical accessory. In this blog post, we will explore the different types of men's bags and their various benefits.
@@ -186,6 +186,48 @@ export const articleContent = {
         Conclusion:
         
         Men's bags are versatile, organized, comfortable, stylish, and functional. With a wide range of options, you can find a bag that suits your needs and personal style. Whether you're going to work, the gym, or traveling, a men's bag is an essential accessory. `,
+    },
+    {
+      id: 6,
+      title: "Unlock the Secret to Glowing Skin",
+      description:
+        "Discover the benefits of using an exfoliating brush! By removing dead skin cells, unclogging pores, and enhancing product absorption, you can achieve healthier, glowing skin.",
+      image: "/img/blog/exfoliating-brush.jpg",
+      content: `
+
+      Exfoliating Brush: Unlocking the Secret to Glowing Skin
+      
+      Achieving healthy and glowing skin is a goal that many people strive for. While a good skincare routine is essential, using the right tools can also make a significant difference. One such tool is an exfoliating brush. In this article, we'll explore the virtues of using an exfoliating brush and how it can benefit your skin.
+      
+      What is an exfoliating brush?
+      
+      An exfoliating brush is a tool designed to remove dead skin cells, unclog pores, and promote healthy skin. These brushes typically have bristles made from natural or synthetic materials and can be used on various parts of the body, such as the face, arms, legs, and feet. Exfoliating brushes come in different shapes and sizes, and some even have different settings to adjust the intensity of the brush.
+      
+      Benefits of using an exfoliating brush
+      
+      1. Removes dead skin cells
+      
+      One of the main benefits of using an exfoliating brush is that it helps remove dead skin cells. Dead skin cells can make the skin look dull and dry, and they can also clog pores, leading to acne and breakouts. By removing these dead skin cells, an exfoliating brush can help reveal smoother and brighter-looking skin.
+      
+      2. Promotes blood circulation
+      
+      Exfoliating brushes can also promote blood circulation in the skin. When you use an exfoliating brush, you're stimulating blood flow, which can help deliver nutrients and oxygen to the skin. This can result in a healthier, more radiant complexion.
+      
+      3. Unclogs pores
+      
+      Clogged pores are a common problem that can lead to blackheads, whiteheads, and acne. By using an exfoliating brush, you can help unclog pores and prevent these skin issues from occurring. Exfoliating brushes can reach deep into the pores to remove dirt, oil, and other impurities.
+      
+      4. Enhances skincare product absorption
+      
+      When you use an exfoliating brush, you're also helping to enhance the absorption of your skincare products. By removing dead skin cells and unclogging pores, your skincare products can penetrate deeper into the skin, allowing for better absorption and effectiveness.
+      
+      How to use an exfoliating brush
+      
+      Using an exfoliating brush is simple. First, wet your skin with warm water. Next, apply your favorite exfoliating cleanser to the brush or directly to your skin. Gently move the brush in a circular motion over your skin, avoiding sensitive areas like the eyes. Rinse your skin with warm water and pat dry with a clean towel.
+      
+      Conclusion
+      
+      In conclusion, an exfoliating brush can be a valuable tool in your skincare routine. By removing dead skin cells, promoting blood circulation, unclogging pores, and enhancing skincare product absorption, an exfoliating brush can help you achieve healthier and glowing skin. So why not give it a try and see the difference for yourself?`,
     },
   ],
 };
