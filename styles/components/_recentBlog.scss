@@ -1,0 +1,45 @@
+.recent-blog {
+  padding: 30px 15px;
+  border-radius: 30px;
+  background: $white1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  .recent-article-image-container {
+    text-align: center;
+    img {
+      height: 155px;
+      margin: 0 auto;
+      //   max-width: 240px;
+    }
+  }
+  h2 {
+    color: $black2;
+    font-family: $font1;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  a {
+    background: $black2;
+    color: $white1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: $font2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    &:hover {
+      background: $black1;
+    }
+  }
+  &:hover {
+    background: $grey2;
+    scale: 101%;
+  }
+  &:hover p {
+    color: $black2;
+  }
+}

@@ -1,16 +1,18 @@
 .blog-page-main {
+  position: relative;
   max-width: 1200px;
-  margin: 45px auto;
+  margin: 75px auto;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
-  background: $black2;
+  background: $grey2;
   @media screen and (max-width: 1200px) {
     margin: 45px 20px;
   }
   .scroll-container-title {
-    color: white;
-    text-align: center;
+    color: $black2;
+    text-align: left;
     padding-top: 45px;
+    padding-left: 40px;
     font-family: $font2;
     font-size: 2.4rem;
   }
@@ -29,5 +31,37 @@
       scroll-snap-align: center;
       height: 610px;
     }
+  }
+  #right-button-scroll {
+    background: $black2;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $white1;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+  }
+}
+.blog-recent-articles {
+  max-width: 1200px;
+  margin: 45px auto;
+  box-shadow: rgba(0, 0, 0, 0.612) 0px 2px 4px;
+  border-radius: 30px;
+  background: $black2;
+
+  h2 {
+    color: $white1;
+    text-align: left;
+    padding-top: 45px;
+    padding-left: 40px;
+    font-family: $font2;
+    font-size: 2.4rem;
+  }
+  .recent-blog-posts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
   }
 }

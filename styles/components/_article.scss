@@ -21,6 +21,7 @@
   img {
     height: 155px;
     margin: 0 auto;
+    max-width: 240px;
   }
 
   p {
@@ -28,9 +29,6 @@
     text-align: justify;
     color: $grey1;
   }
-  // .article-page-link {
-  //   text-align: center;
-
   a {
     background: $black2;
     color: $white1;
@@ -47,8 +45,11 @@
     }
   }
   &:hover {
-    background: $grey2;
+    background: $grey1;
     scale: 101%;
+  }
+  &:hover p {
+    color: $black2;
   }
 }
 // }

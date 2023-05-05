@@ -12,7 +12,7 @@ const Article = ({ id }) => {
 
       <p>{article.description}</p>
 
-      <a href={"./blog" + article.title}>Read More</a>
+      <a href={"./blog/" + article.link}>Read More</a>
     </div>
   );
 };
