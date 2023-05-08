@@ -1,10 +1,23 @@
+import { useState } from "react";
+
 const Footer = () => {
+  // const [isBackgroundColorNormal, setIsBackgroundColorNormal] = useState(true);
   return (
-    <footer>
+    <footer
+    // className={
+    //   isBackgroundColorNormal ? "background-normal" : "background-vert"
+    // }
+    >
       <div className="footer-content">
         <div className="footer-menu">
           <div className="footer-menu-shop">
             <h3>Best Products</h3>
+            {/* <button onClick={() => setIsBackgroundColorNormal(false)}>
+              Change Bg Color
+            </button>
+            <button onClick={() => setIsBackgroundColorNormal(true)}>
+              Restaure Bg Color
+            </button> */}
             <ul>
               <li>Tongue Scrapper</li>
               <li>Push-up bars</li>

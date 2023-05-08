@@ -36,6 +36,18 @@ const Navigation = () => {
     };
   }, [isSidebarOpen, router]);
 
+  // if (typeof window !== "undefined") {
+  //   let lastScroll = 0;
+  //   console.log(navigationRef.current.style.top);
+  //   window.addEventListener("scroll", () => {
+  //     if (window.scrollY < lastScroll) {
+  //       navigationRef.current.style.top = "0";
+  //     } else {
+  //       navigationRef.current.style.top = "-90px";
+  //     }
+  //     lastScroll = window.scrollY;
+  //   });
+  // }
   return (
     <div className="navigation" ref={navigationRef}>
       <div className="navigationBurgerMenu">
