@@ -63,5 +63,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 40px;
+    @media screen and (max-width: 1194px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
