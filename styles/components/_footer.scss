@@ -18,89 +18,129 @@ footer {
     justify-content: space-between;
     padding: 20px 0;
     align-items: center;
-    gap: 30px;
-  }
-  .footer-social-media {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    @media screen and (max-width: 637px) {
-      gap: 20px;
-    }
-
-    span {
-      display: inline-block;
-      font-size: 2rem;
-      transition: 0.3s ease-out;
-      cursor: pointer;
-      &:hover {
-        color: $grey1;
-        scale: 105%;
-      }
-    }
-  }
-}
-
-.footer-newsletter {
-  @include flexCenter;
-  flex-direction: column;
-  margin-bottom: 40px;
-  h2 {
-    color: $white1;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    font-weight: 550;
-    background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
-      linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
-    background-size: 0% 6px, 100% 6px;
-    background-position: 0 bottom, 0 bottom;
-    background-repeat: no-repeat;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-  }
-  form {
-    @media screen and (max-width: 388px) {
-      @include flexCenter;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input[type="email"],
-    input[type="submit"] {
-      font-family: $font1;
-      font-size: 1rem;
-      color: $black1;
-      text-align: center;
-      border: none;
-      border-radius: 2px;
-      background-color: $white1;
-      padding: 5px 30px;
-      margin: 0 5px;
-      &:focus {
-        background: $black1;
+    gap: 20px;
+    .footer-menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h3 {
         color: $white1;
-      }
-      &::placeholder {
-        color: $black1;
-        font-size: 1rem;
-        &:focus {
-          color: $white1;
+        font-size: 2rem;
+        font-family: $font2;
+        margin-bottom: 15px;
+        @media screen and (max-width: 900px) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: 515px) {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+        &:hover {
+          color: $grey1;
+          scale: 105%;
         }
       }
-      @media screen and (max-width: 388px) {
-        display: block;
+      ul {
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+        li {
+          padding: 10px 0;
+
+          &:hover {
+            color: $grey1;
+            scale: 101%;
+            cursor: pointer;
+          }
+        }
       }
     }
-    input[type="submit"] {
-      text-transform: capitalize;
-      background: $grey1;
+
+    .footer-social-media {
+      // width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      @media screen and (max-width: 637px) {
+        gap: 20px;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 2rem;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+        &:hover {
+          color: $grey1;
+          scale: 105%;
+        }
+      }
+    }
+  }
+
+  .footer-newsletter {
+    @include flexCenter;
+    flex-direction: column;
+    margin-bottom: 40px;
+    h3 {
       color: $white1;
-      cursor: pointer;
-      &:hover {
-        color: $black2;
-        background: $grey2;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      font-family: $font2;
+      background-image: linear-gradient(
+          transparent calc(100% - 1px),
+          #000000 1px
+        ),
+        linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
+      background-size: 0% 6px, 100% 6px;
+      background-position: 0 bottom, 0 bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+    form {
+      @media screen and (max-width: 388px) {
+        @include flexCenter;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input[type="email"],
+      input[type="submit"] {
+        font-family: $font1;
+        font-size: 1rem;
+        color: $black1;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        background-color: $white1;
+        padding: 5px 30px;
+        margin: 0 5px;
+        &:focus {
+          background: $black1;
+          color: $white1;
+        }
+        &::placeholder {
+          color: $black1;
+          font-size: 1rem;
+          &:focus {
+            color: $white1;
+          }
+        }
+        @media screen and (max-width: 388px) {
+          display: block;
+        }
+      }
+      input[type="submit"] {
+        text-transform: capitalize;
+        background: $grey1;
+        color: $white1;
+        cursor: pointer;
+        &:hover {
+          color: $black2;
+          background: $grey2;
+        }
       }
     }
   }
