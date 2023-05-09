@@ -1,9 +1,9 @@
 import React from "react";
 import Meta from "./Meta";
-import { articleContent } from "@/utils/articleContent";
+import { articlesContent } from "@/utils/content/articlesContent";
 
 const ContentPageArticle = ({ id }) => {
-  const article = articleContent.articles.find((article) => article.id === id);
+  const article = articlesContent.articles.find((article) => article.id === id);
 
   return (
     <div className="article-page">

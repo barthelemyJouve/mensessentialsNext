@@ -1,8 +1,8 @@
-import { articleContent } from "@/utils/articleContent";
-
+import { articlesContent } from "@/utils/content/articlesContent";
+import Meta from "@/components/Meta";
 // Generates `/posts/1` and `/posts/2`
 export async function getStaticPaths() {
-  const articleContentIds = articleContent.articles.map((article) => ({
+  const articleContentIds = articlesContent.articles.map((article) => ({
     params: {
       id: article.link,
     },
@@ -17,15 +17,34 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   return {
     // Passed to the page component as props
-    props: { post: context.params },
+    props: { articleFilteredWithUrl: context.params },
   };
 }
 
-export default function Post({ post }) {
+export default function Article({ articleFilteredWithUrl }) {
   // Render post...
-  const articlePageContent = articleContent.articles.filter((content) => {
-    console.log(content.link, post.link);
-    return content.link === post.id;
-  });
-  return <h1>{articlePageContent[0].title}</h1>;
+  const articlePageContent = articlesContent.articles.filter(
+    (article) => article.link === articleFilteredWithUrl.id
+  );
+  const article = articlePageContent[0];
+  return (
+    <div className="article-page">
+      <Meta />
+      <div className="header-article-page">
+        <h1>{article.title}</h1>
+        <div className="image-article">
+          <img src={article.image} alt={article.title} />
+          <div className="article-page-link">
+            <a href={"./blog" + article.title}>Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div className="main-article-page">
+        <p>{article.content}</p>
+        <div className="article-page-link">
+          <a href={"./blog" + article.link}>Order Now</a>
+        </div>
+      </div>
+    </div>
+  );
 }
